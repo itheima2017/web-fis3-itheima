@@ -1,0 +1,200 @@
+@import "../../modules/css-modules/variables";
+@import "../../modules/ui-modules/top-header/top-header";
+
+.travel-preorder {
+    dl {
+        margin-bottom: 0;
+    }
+    a {
+            color: $master-color-1;
+            text-decoration: none;
+            &:hover {
+                color: $master-color-3;
+            }
+        }
+    // reset end
+    .top-block {
+        overflow: hidden;
+        padding: 15px 0;
+        img {
+            width: 150px;
+        }
+        .steps {
+            float: right;
+            height: 50px;
+            overflow: hidden;
+            padding-top: 10px;
+            width: 580px;
+            dl {
+                color: $master-color-2;
+                height: 27px;
+                line-height: 27px;
+                padding-top: 23px;
+                background: url("steps.png") no-repeat right 0;
+                &.step2 {
+                    background-position: right -50px;
+                }
+                dd {
+                    float: right;
+                    text-align: right;
+                }
+                .s5 { width: 112px;}
+                .s4 { width: 124px;}
+                .s3 { width: 124px;}
+                .s2 { width: 124px;}
+                .s1 { width: 80px;}
+            }
+            
+        }
+    }
+    .preorder-box {
+        .order-text {
+            .order-title {
+                padding: 10px;
+                border: 1px solid $borderColor;
+                border-top-color: $greenTheme;
+                border-top-width:2px;
+                dt {display: inline}
+                dd {display: inline;font-size:16px;span {font-size:13px;}}
+            }
+            .type-info {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                border: 1px solid $borderColor;
+                border-top-color: $greenTheme;
+                h4 {
+                    margin: 0;
+                    padding:10px;
+                    border-bottom:1px solid $borderColor;
+                    background-color: $master-color-4;
+                    font-size:16px;
+                    font-weight:bold;
+                    span {
+                        font-size:12px;
+                        }
+                    }               
+                .form-list {
+                    padding: 10px 20px;
+                    .godate {
+                        float:left;
+                        line-height: 32px;
+                        vertical-align: middle;
+                    }
+                    .inputdate {
+                        width: 130px;
+                        .form-control {
+                            line-height: 28px;
+                            font-size: 12px;
+                        }
+                    }               
+                    .date-item {
+                        margin: 10px 0;
+                        }
+                       .often-customer {
+                           padding-left:10px;
+                           margin-bottom:10px;
+                           border-top:1px solid $greenTheme;
+                           line-height: 36px;
+                           background-color: $master-color-4;
+                           }
+                        .form-group {
+                            overflow:hidden;
+                            margin-bottom: 10px;
+                        .form-control { 
+                            padding: 6px 5px;
+                            border-radius: 0;
+                            }
+                    }
+                }
+            }
+            .base-info {
+                th,td {
+                    text-align: center;
+                }
+                .people-num {
+                    display: inline-block;
+                    border-radius: 2px;
+                    box-sizing: border-box;
+                    border: 1px solid $borderColor;
+                    background-color: #fff;
+                    font-size: 12px;
+                    .tool-btn {
+                        width: 20px;
+                        height: 26px; 
+                        color: #929292;
+                        font-size: 12px;                                  
+                        &.minus { padding-left:0;padding-right: 0;}
+                        &.plus {padding-left: 0;padding-right: 5px;}
+                    }
+                    .num {
+                        width: 33px;
+                        height: 33px;
+                        box-sizing: border-box;
+                        border-left: 1px solid $borderColor;
+                        border-right: 1px solid $borderColor;
+                        display: inline-block;
+                        border-top: 0;
+                        border-bottom: 0;
+                        text-align: center;
+                    }
+                }
+            }
+            .order-need {
+                .scroll-xieyi {
+                    padding: 10px;
+                    margin-top: 10px;
+                    height: 165px;
+                    overflow: auto;
+                    border: 1px solid $borderColor;
+                }
+            }
+            .text-center {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                a {
+                    color: $master-color-0;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+        .costs { padding: 0}
+        .div2 { 
+            width: 292.5px;
+            top:5px;
+            z-index:999;
+            position:fixed;
+            _position:absolute
+        }
+
+        
+        .order-list {
+            border-top: 1px solid $master-color-3;
+            background-color: #fff4d9;;
+            .panel-heading {      
+                color: $master-color-3;
+            }
+            .panel-body {
+                .price{
+                    float: right;
+                    font-style: normal;
+                }
+            }
+            .panel-footing {
+                padding: 10px 15px;
+                line-height: 40px;
+                background-color: $master-color-3;
+                color: $master-color-0;
+                span {
+                     font-size:22px;
+                }
+            }
+            
+        }
+        
+    }
+}
+.footer {
+    padding: 10px;
+    border-top: 1px solid $borderColor;
+    background-color: $master-color-4;
+}

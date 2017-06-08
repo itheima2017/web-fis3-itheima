@@ -1,0 +1,79 @@
+<!--产品列表-->
+<script type="text/ejs" data-json="./travel-product-list.json">
+
+<div class="product-list">
+  <% for(var i=0;i<productlist.length;i++){ %>
+    <div class="product">
+       
+        <div class="media">
+            <div class="media-left">
+                <img src="<%=productlist[i].img%>" alt="" width="225" height="125">
+                <span class="mark free"><%=productlist[i].type%></span>
+                <p><%=productlist[i].intro%></p>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">
+                    <span class="title"><%=productlist[i].mtitle%></span> <%=productlist[i].stitle%>
+                </h4>
+                <p>
+                    <em>
+                        <a href="#" data-toggle="tooltip" data-placement="left"  title="<div><h5><strong>积分抵扣</strong></h5>1. 显示“百旅会”标识的产品，百旅会VIP会员均可使用专属积分抵扣部分订单金额，该优惠与其他优惠不可同时享受，350积分可抵扣前台优惠金额700元，最终抵扣额度以订单成功创建为准；</p>
+                        </p></div>">积分抵扣</a>
+                    </em>
+                    <em>
+                        <a href="#" data-toggle="tooltip" data-placement="right"  title="<div><h5><strong>点评返现</strong></h5>1.点评成功后，您将获得25-50元不等的点评奖金,审核通过后返还至您的奖金账户。</p>
+                        </p></div>">点评返现</a>
+                    </em>
+                <p>
+                    <i class="glyphicon glyphicon-map-marker city-icon"></i> <span class="city-icon"><%=productlist[i].fromcity%>出发</span>
+                    <span class="activity">热推</span>
+                </p>
+                <p>
+                    出发日期： 06-17 | 06-24 | 07-08 | 07-29 | 08-05 | 08-19 更多 <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                </p>
+
+            </div>
+            <div class="media-right">
+                <p><em>￥</em><span class="price"><%=productlist[i].price%></span>起</p>
+                <p><a class="btn btn-warning btn-detail" href="travel-info.html" target="_blank">查看详情</a></p>
+                <p class="remark"><span class="theme-color"><%=productlist[i].good%></span>满意度&nbsp;&nbsp;<span class="theme-color"><%=productlist[i].comment%></span>条点评</p>
+            </div>
+        </div>
+       
+    </div>
+ <% } %>
+   
+</div>
+
+ <div class="pull-right pages">
+        <ul class="pagination">
+            <li class="disabled"><a href="#">上一页</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">下一页</a></li>
+        </ul>
+    <div class="gopage">
+        <label>跳转到</label>
+        <input type="text" class="current_page" value="1">
+        <span><a href="" class="btn-go">GO</a></span>
+        <!--<a class="btn btn-default">GO</a>-->
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    
+</script>
+
+<script type="text/javascript" src="../../../plugins/jquery-ui/jquery-ui.custom.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".datemore").click(function () {
+                $(this).children(".moretext").text($(".detailtime").is(":hidden") ? "收起" : "更多");
+                $(this).children(".fa-sort-down").toggleClass("fa-sort-up");  
+                $(".detailtime").slideToggle();
+                $('#calendar').fullCalendar('render');
+            })
+    });
+</script>

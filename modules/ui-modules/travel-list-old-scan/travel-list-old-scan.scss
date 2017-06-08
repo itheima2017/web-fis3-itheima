@@ -1,0 +1,48 @@
+ @import "../../css-modules/variables";
+
+.old-scan{
+    float:right;
+    margin-top: 15px;
+    width: 230px;
+    .panel-scan {
+        border-radius: 0;
+        border: 1px solid $borderColor;
+         background-color: $master-color-0;
+        .panel-heading {
+           margin-left: 10px;
+           margin-right: 10px;
+           border-bottom: 1px solid $borderColor;
+           .fa {
+               font-size:20px;
+               color: $master-color-2;
+           }
+        }
+        .panel-body {
+            padding: 8px 12px 0;
+            font-size:12px;
+           
+             ul {
+                    li {
+                        margin-bottom: 8px;
+                        border-bottom: 1px dotted $borderColor;
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                        .media-body {            
+                            p {
+                                margin: 0;                              
+                                &.price {
+                                    line-height: 25px;
+                                    color: $master-color-2;
+                                    span {
+                                        color: $master-color-3;
+                                    }
+                                }
+                               
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}

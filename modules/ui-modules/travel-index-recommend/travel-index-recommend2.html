@@ -1,0 +1,73 @@
+<!--推荐区二-->
+<script type="text/ejs" data-json="./travel-product.json">
+<div class="recommend2">
+    <div class="recommend-left">
+        <h4 class="title-bg"><span>周边游</span></h4>
+        <div class="recommend-detail">
+            <div class="title">常用目的地</div>
+            <div class="points">
+                <ul class="list-unstyled">
+                    <li><a href="#">古北水镇</a></li>
+                    <li><a href="#">故宫</a></li>
+                    <li><a href="#">八达岭长城</a></li>
+                    <li><a href="#">颐和园</a></li>
+                    <li><a href="#">北京欢乐谷</a></li>
+                    <li><a href="#">北京野鸭湖国家湿地公园</a></li>
+
+                </ul>
+            </div>
+            <div class="title">短线玩法</div>
+            <div class="points">
+                <ul class="list-unstyled">
+                    <li><a href="#">天安门+故宫</a></li>
+                    <li><a href="#">颐和园+圆明园</a></li>
+                    <li><a href="#">玉渊潭公园</a></li>
+                    <li><a href="#">颐和园</a></li>
+                    <li><a href="#">北京欢乐谷</a></li>
+                    <li><a href="#">北京野鸭湖国家湿地公园</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="recommend-right">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">推荐</a><em class="arrow"><i></i></em></li>
+            <li role="presentation"><a href="#tab-a" aria-controls="tab-a" role="tab" data-toggle="tab">北京</a><em class="arrow"><i></i></em></li>
+            <li role="presentation"><a href="#tab-b" aria-controls="tab-b" role="tab" data-toggle="tab">上海</a><em class="arrow"><i></i></em></li>
+            <li role="presentation"><a href="#tab-c" aria-controls="tab-c" role="tab" data-toggle="tab">武汉</a><em class="arrow"><i></i></em></li>
+            <li role="presentation"><a href="#tab-d" aria-controls="tab-d" role="tab" data-toggle="tab">杭州</a><em class="arrow"><i></i></em></li>
+            <li role="presentation"><a href="#tab-e" aria-controls="tab-e" role="tab" data-toggle="tab">西安</a><em class="arrow"><i></i></em></li>
+
+        </ul>
+        <a class="pull-right more" href="#">更多周边游线路>></a>
+
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <div class="prolist">
+                    <ul>
+                         <% for(var i=0;i<productlist.length;i++){ %>
+                            <li class="proline">
+                                <a href="travel-info.html" target="_blank">
+                                    <div class="proline-img"><img src="<%=productlist[i].img%>" class="img-responsive" /></div>
+                                    <div class="proline-text">
+                                        <div class="destination">【爱游推荐】<%=productlist[i].title%></div>
+                                        <div class="price"><i>￥<%=productlist[i].price%></i>起<em><%=productlist[i].fromcity%>出发</em></div>
+                                    </div>
+                                </a>
+                            </li>
+                        <% } %>
+
+                    </ul>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab-a">北京</div>
+            <div role="tabpanel" class="tab-pane" id="tab-b">上海</div>
+            <div role="tabpanel" class="tab-pane" id="tab-c">武汉</div>
+            <div role="tabpanel" class="tab-pane" id="tab-d">杭州.</div>
+            <div role="tabpanel" class="tab-pane" id="tab-e">西安</div>
+        </div>
+
+    </div>
+</div>
+</script>

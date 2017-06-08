@@ -1,0 +1,14 @@
+ @import "../../css-modules/variables";
+ 
+ .topNavWrapper {
+        font-size:12px;
+        line-height: 28px;
+        background-color:$master-color-4;   
+        border-bottom: 1px solid #ececec;
+        .navbar { 
+            min-height: 28px;
+            margin-bottom: 0;
+            overflow:hidden;
+            padding-right: 15px; 
+         }              
+    }

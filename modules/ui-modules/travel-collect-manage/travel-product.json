@@ -1,0 +1,53 @@
+ {
+     "productlist": [{
+             "img"  :"../../../assets/img/note01.jpg",
+             "title": "台湾7晚8日游",
+             "formcity": "北京",
+             "price": 2000,
+             "orderid":1256745,
+             "startdate":"2016-05-01",
+             "enddate":"2016-05-05",
+             "orderstate":"待审核"
+         },
+         {
+              "img"  :"../../../assets/img/note02.jpg",
+             "title": "台湾7晚8日游",
+             "formcity": "南京",
+             "price": 1400,
+             "orderid":1256745,
+             "startdate":"2016-10-01",
+             "enddate":"2016-10-05",
+             "orderstate":"待审核"
+         },
+         {
+              "img"  :"../../../assets/img/note03.jpg",
+             "title": "台湾7晚8日游",
+             "formcity": "北京",
+             "price": 3700,
+             "orderid":1256745,
+             "startdate":"2017-01-01",
+             "enddate":"2017-01-05",
+             "orderstate":"待评价"
+         },
+         {
+             "img"  :"../../../assets/img/note04.jpg",
+             "title": "台湾7晚8日游",
+             "formcity": "北京",
+             "price": 2019,
+             "orderid":1256745,
+             "startdate":"2016-05-01",
+             "enddate":"2016-05-05",
+             "orderstate":"已取消"
+         },
+         {
+              "img"  :"../../../assets/img/note01.jpg",
+             "title": "台湾7晚8日游",
+             "formcity": "北京",
+             "price": 2089,
+             "orderid":1256745,
+             "startdate":"2016-05-01",
+             "enddate":"2016-05-05",
+             "orderstate":"待出行"
+         }
+     ]
+ }

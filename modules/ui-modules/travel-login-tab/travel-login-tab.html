@@ -1,0 +1,72 @@
+<div class="travel-login-tab">
+    <div class="left-content"><img src="login.jpg" /></div>
+    <div class="right-content">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#login1" aria-controls="login1" role="tab" data-toggle="tab">普通登录</a></li>
+            <li role="presentation"><a href="#login2" aria-controls="login2" role="tab" data-toggle="tab">动态码登录</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="login1">
+                <form class="form-inline" id="phoneform">
+                    <div class="form-group">
+                         <div class="input-group">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
+                            <input type="email" class="form-control" id="phonenumber" name="phonenumber" placeholder="输入手机号码">
+                        </div>                                 
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+                            <input type="text" class="form-control" id="password" name="password" placeholder="输入密码">
+                        </div>
+                    </div>
+                </form>
+                 <div class="checkbox">
+                    <label class="pull-left"><input type="checkbox" checked><span>30天自动登录</span></label>
+                    <span class="forget pull-right"><a href="travel-forget-step1.html" target="_blank">忘记密码？</a> </span>
+                </div>
+
+            </div>
+            <!--普通登录end-->
+            <div role="tabpanel" class="tab-pane" id="login2">
+                <form class="form-inline" >
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon user-photo"><i class="glyphicon glyphicon-user"></i></div>
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="手机号码">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control inputyz" id="exampleInputAmount" placeholder="输入验证码">
+                            <div class="yzm"><img src="yz.png" /></div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+                            <input type="text" class="form-control auto" id="exampleInputAmount" placeholder="动态码">
+                            <button type="submit" class="btn btn-default getauto">获取验证码</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <!--动态登录end-->
+            <a class="btn btn-block btn-warning btn-login" href="travel-personal-homedata.html" target="_blank">登&nbsp;&nbsp;录</a>
+            <div class="goregister">还没有账号，马上去<a href="travel-signup-step1.html" target="_blank">注册</a>吧！</div>
+            <div class="other-account">
+                <ul class="list-unstyled list-inline">
+                    <li><a href="#" class="btn-other"><i class="fa fa-qq"></i> QQ</a></li>
+                    <li><a href="#" class="btn-other"><i class="fa fa-weibo"></i> 新浪</a></li>
+                    <li><a href="#" class="btn-other"><i class="fa fa-weixin"></i> 微信</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+

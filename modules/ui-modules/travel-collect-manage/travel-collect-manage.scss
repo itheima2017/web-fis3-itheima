@@ -1,0 +1,40 @@
+@import "../../css-modules/variables";
+
+.travel-collect-manage {
+    h4 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        line-height: 32px;
+        height: 32px;
+        border-bottom: 2px solid $borderColor;
+    }
+    .collect-content {
+        padding:5px 0 10px 10px;
+        .operate {
+           margin-bottom: 10px;
+           overflow: hidden;
+           border-bottom: 1px solid $borderColor;
+           font-weight: bold;
+           font-size:15px;
+        }
+        .products {
+            .product-item {
+                padding-top: 8px;
+                padding-bottom:8px;
+                .inputcheck { float:left;padding-right: 10px;}
+                .media-head {
+                    font-weight: bold;
+                }
+                .btn-preorder{
+                    padding: 0 8px;
+                    color: $master-color-3;
+                    font-size:13px;
+                }
+                .btn-del {
+                    font-size:13px;
+                    color: $master-color-1;
+                }
+            }
+        }
+    }
+}

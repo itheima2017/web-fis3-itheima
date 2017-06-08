@@ -1,0 +1,83 @@
+    @import "../../modules/css-modules/variables";
+   @import "../../modules/css-modules/base";   
+    @import "../../modules/ui-modules/top-header/top-header";
+    @import "../../modules/ui-modules/header/header";
+    @import "../../modules/ui-modules/footer/footer";
+    @import "../../modules/ui-modules/sidebar/sidebar";
+    @import "../../modules/ui-modules/travel-info-breadcrumb/travel-info-breadcrumb";
+    @import "../../modules/ui-modules/travel-info-imgroll/travel-info-imgroll";
+    @import "../../modules/ui-modules/travel-info-detail/travel-info-detail";
+    @import "../../modules/ui-modules/travel-info-tabindex/travel-info-tabindex";
+    html,body {
+        height: 100%
+    }
+    .travel-info-main {
+        min-height: 100%;
+        overflow:hidden;
+        .travel-info-content {
+            padding-bottom: 300px;
+        }
+    }
+  .travel-info {
+      background-color: #fafafa;
+      font-family: "微软雅黑";
+     .travel-type {
+              width: 67px;
+              height: 67px;
+              margin-top: -5px;
+              margin-left: -5px;
+              display: block;
+              position: absolute;
+              background:url("tit-icon.png") no-repeat scroll  0 0;
+              z-index: 99;
+          }
+      .travel-content {
+          .travel-introduce {
+               position: relative;
+               background-color:$master-color-0;
+               border: 1px solid $borderColor;
+               overflow:hidden;
+          }        
+      }
+      .likes {
+          h4 {
+              font-weight: bold;
+          }
+              .list-inline {
+                  li {
+                      width: 219px;
+                      padding: 0;
+                      margin-left: 6px;
+                      border: 1px solid #eaeaea;
+                      background-color: #fff;
+                      img {
+                          width: 100%;
+                      }
+                      p {
+                          margin-top: 6px;
+                          margin-bottom:6px;
+                          padding-left: 8px;
+                      }
+                      .price {
+                          padding:3px 8px 6px;
+                          color: #999;
+                          .money {
+                              em {
+                                  font-style: normal;
+                                  color:$master-color-3;
+                              }
+                              i {
+                                  font-style: normal;
+                                  font-size: 18px;
+                                  color:$master-color-3;
+                              }
+                          }
+                          .gowhere{
+                              float:right;
+                             margin-top: 3px;
+                          }
+                      }
+                  }
+              }
+          }
+  }

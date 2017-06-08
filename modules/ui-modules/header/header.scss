@@ -1,0 +1,46 @@
+ @import "../../css-modules/variables";
+
+header {
+    /*
+     * nav-color, menu-color, mouseover-color
+     */
+    a { 
+        color:$master-color-2;
+        &:hover { 
+            color:$master-color-3;
+            text-decoration: none; 
+        }
+    }
+   
+    .headerWrapper {
+       min-height: 40px;
+       padding: 5px 0;
+       .tel { 
+           font-size:18px;
+           color:$master-color-3;
+           .glyphicon-earphone {
+                border: 2px solid $master-color-3;
+                padding: 4px;
+                border-radius: 13px;
+                margin-right: 5px;
+                font-size: 13px;
+           }
+        }  
+    }
+    .menuNavWrapper {
+       background-color: $navbarColor;
+       .navbar-nav {
+           li {
+               line-height: 36px;
+               &.active { 
+                   background-color: $master-color-3;
+               }
+               a { 
+                   color: $master-color-0;
+                   &:hover,&:focus {background-color: $master-color-3;} 
+               }
+           }
+       }
+    }
+}
+

@@ -1,0 +1,30 @@
+<!--最近浏览列表-->
+<script type="text/ejs" data-json="./travel-product.json">
+<div class="old-scan">
+    <div class="panel-scan">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-clock-o" aria-hidden="true"></i> 浏览历史</h3>
+        </div>
+        <div class="panel-body">
+           <ul class="list-unstyled">
+               <% for(var i=0;i<productlist.length;i++){ %>
+               <li>
+                   <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="<%=productlist[i].img%>" width="68" height="55" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <p class="title"><%=productlist[i].title%></p>
+                        <p class="price"><span>￥<%=productlist[i].price%>元</span> 起</p>
+                    </div>
+                    </div>
+               </li>
+              <% } %>
+               
+            </ul>
+        </div>
+    </div>
+</div>
+</script>

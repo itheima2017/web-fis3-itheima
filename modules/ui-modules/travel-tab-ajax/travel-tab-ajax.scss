@@ -1,0 +1,93 @@
+ @import "../../css-modules/variables";
+
+.travel-tab-ajax {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow:hidden;
+    .sidebar-nav {
+        padding: 0;
+        border: 1px solid $borderColor;
+        border-right: 0;
+        background-color:#fafafa;
+        h4 {
+            padding: 0 15px;
+            margin: 0;
+            line-height: 42px;
+            height: 42px;
+            border-right: 1px solid $borderColor;
+            color: $master-color-1;
+        }
+        .nav-header {
+         display: block;
+         padding: 0 15px;
+         height: 42px;
+         border-right: 1px solid $borderColor;
+         line-height: 42px;
+         text-decoration: none;
+         color: $master-color-1;
+         font-weight: bold;
+         &.on {
+            font-weight: bold;
+         }
+         .glyphicon {
+             height: 42px;
+             line-height: 42px;
+         }
+         &.collapsed {
+             .glyphicon-chevron-toggle {
+                 &:before { content: "\e113"}
+             }
+         }
+         .glyphicon-chevron-toggle {
+                 &:before { content: "\e114"}
+             }
+        }
+        .nav-tabs {
+            border-bottom: 0;
+            li {
+                padding: 0;
+                margin-bottom: 0;
+                height: 42px;  
+                float: none;             
+                border-right:1px solid $borderColor;
+                line-height: 42px;
+                background-color: $master-color-4;
+              
+                a {
+                    padding-left: 15px;
+                    color: $master-color-2;
+                    border: 0;
+                    cursor: pointer;
+                    background-color: transparent;
+                    &:hover{
+                        border:0;
+                        color: $hoverColor;
+                        background-color: transparent;
+                    }
+                }
+                &.active {
+                    border-left:2px solid $master-color-3;
+                    border-top: 1px solid $borderColor;
+                    border-bottom: 1px solid $borderColor;
+                    border-right: 0;
+                    background-color: $master-color-0;
+                        
+                }
+            }
+        }
+
+    }
+    .tab-content {
+        h4 {
+            line-height: 32px;
+            border-bottom: 1px solid $borderColor;
+        }
+        .step-content {
+            font-size:12px;
+            .index-title {
+                color: $navbarColor;
+                font-weight: bold;
+            }
+        }
+    }
+}

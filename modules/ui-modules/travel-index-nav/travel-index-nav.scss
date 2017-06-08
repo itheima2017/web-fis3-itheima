@@ -1,0 +1,95 @@
+ @import "../../css-modules/variables";
+
+.travel-index-nav {
+    position: relative;
+    float:left;
+    width: 320px;
+    height: 100%;
+    a { 
+        color:#797979;;
+        &:hover { 
+            color:$master-color-3;
+            text-decoration: none;
+        }
+    }
+
+    .citylistbox {
+        border:2px solid $master-color-3;
+        border-top-width: 1px;
+        .listbox {
+            border-bottom: 1px solid #f0f0f0;  
+            border-top: 1px solid transparent;  
+            &:first-child {
+                     border-top: 1px solid $master-color-3;                   
+            }
+            &:last-child {
+                    border-bottom: none;                    
+            }
+            .list {                
+                overflow: hidden; 
+                position: relative;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                margin-left: 10px;
+                margin-right: 10px;
+                background-color:$master-color-0;
+                z-index:-1;
+                .icon { 
+                    width: 28px;
+                    height: 28px;
+                    float:left;
+                }
+                dl { 
+                    width: 292px;
+                    margin: 0;
+                    dt{ 
+                        font-size:16px;
+                        font-weight: normal;
+                    }
+                    dd { 
+                        margin-top: 5px;
+                        margin-left: 28px;
+                        line-height: 26px; 
+                        a { 
+                            padding-right: 14px;
+                        }
+                    }
+                }
+            }
+            .box {
+                display:none;
+                height:287px !important;
+                _height: 289px;
+                *height: 289px;
+                width:329px;
+                position: absolute;
+                margin-left: 312px;
+                top: 0;
+                padding: 12px;
+                background-color: #fff;
+                border: 2px solid $master-color-3;
+                z-index: 20;
+            }
+           
+        }
+        .hover { 
+            width: 326px;
+            background-color: #fff;
+            border-top:1px solid $master-color-3;
+            border-bottom: 1px solid $master-color-3;
+            z-index:21;
+            // margin-top:-4px;
+            &:first-child { 
+                border-top:1px solid $master-color-3;
+                margin-top:0;
+            }
+            &:last-child { 
+                border-bottom: none;
+            }
+            .list { 
+                border: 0;
+                z-index: 21;
+            }
+        }
+    }  
+}

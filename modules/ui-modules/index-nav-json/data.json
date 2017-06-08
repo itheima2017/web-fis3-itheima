@@ -1,0 +1,13 @@
+{
+  "list": [{
+    "title": "主要页面",
+    "dataList":[
+      {"tit":"首页","url":"./travel-index.html"},
+      {"tit":"列表页","url":"./travel-list.html"},
+      {"tit":"详情页","url":"./travel-info.html"},
+      {"tit":"预定页","url":"./travel-preorder.html"},
+      {"tit":"支付页","url":"./travel-pay.html"},
+      {"tit":"帮助中心","url":"./travel-help.html"},
+      {"tit":"意见反馈","url":"./travel-feedback.html"}]
+  }]
+}

@@ -1,0 +1,40 @@
+<script type="text/ejs" data-json="./travel-product.json">
+
+<div class="travel-collect-manage">
+    <h4>收藏管理</h4>
+    <div class="collect-content">
+        <div class="operate">
+            <ul class="list-unstyled list-inline">
+                <li class="col-md-2"><input type="checkbox" name="chooseall" id="chooseall"> 全选&nbsp;删除选中</li>
+                <li class="col-md-4">产品信息</li>
+                <li class="col-md-3">参考价</li>
+                <li class="col-md-2">操作</li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="products">
+             <% for(var i=0;i<productlist.length;i++){ %>
+            <div class="clearfix product-item">
+                <ul class="list-unstyle list-inline">
+                    <li class="col-md-6">
+                        <div class="inputcheck">
+                           <input type="checkbox" name="choose" id="choose">
+                        </div>
+                        <div class="media-left"><img src="<%=productlist[i].img%>" width="70px"/></div>
+                        <div class="media-right">
+                            <div class="media-head"><%=productlist[i].title%></div>
+                            <div class="media-body">出发城市：<%=productlist[i].formcity%></div>
+                        </div>
+                    </li>
+                    <li class="col-md-3">￥<%=productlist[i].price%> 起</li>
+                    <li class="col-md-3">
+                        <a href="#" class="btn-preorder">立即预定</a> <a href="" class="btn-del">删除</a>
+                    </li>
+                </ul>
+            </div>
+             <% } %>
+        </div>
+    </div>
+</div>
+</script>

@@ -1,0 +1,31 @@
+<script type="text/ejs" data-json="./data.json">
+
+    <div class="row">
+
+        <% for(var i=0;i<list.length;i++){ %>
+
+            <div class="col-md-4">
+                <h2>
+                    <%=list[i].title%>
+                </h2>
+                <p>
+                    <%=list[i].desc%>
+                </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+
+            <% } %>
+    
+    </div>
+
+</script>
+
+ <!--<%  for(var i=0; i<pages.length;i++){   %>
+         <dl>
+            <dt><% = pages.title%></dt>
+
+            <% for(var j=0;j<pages.data[i].datas.length;j++) {  %>
+                <dd><a href="<%=pages.data[i].datas[j].url%>" target="right"><%=pages.data[i].datas[j].title%></a></dd>
+            <% } %>
+        </dl>
+        <% } %>-->

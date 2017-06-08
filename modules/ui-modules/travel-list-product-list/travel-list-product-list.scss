@@ -1,0 +1,205 @@
+ @import "../../css-modules/variables";
+
+.product-list {
+    margin-top: 15px;
+    border: 1px solid $borderColor;
+    background-color:$master-color-0; 
+    color: $master-color-2;
+    .product {
+        padding: 15px;
+        padding-bottom: 0;
+        border-bottom: 1px solid $borderColor;
+        &:last-child {
+            border-bottom: 0;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: #fafafa;
+        }
+        .detailtime {
+                    margin-top: 10px;
+        }
+        .media {
+            .media-left {
+                position: relative;
+                .mark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: $master-color-0;
+                    &.free {
+                        background-color:$greenTheme;
+                    }
+                }
+                p {
+                    position: relative;
+                    bottom:30px;
+                    left: 0;
+                    padding: 5px;
+                    margin-bottom: 0;
+                    text-transform: none;
+                    text-align: center;
+                    color: $master-color-0;
+                    background-color: rgba(0,0,0,.55);
+                    opacity: 0;
+                    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                    transition: opacity 0.35s, transform 0.35s;
+                    -webkit-transform: translate3d(0,20px,0);
+                    transform: translate3d(0,20px,0);    
+                }
+                &:hover {
+                    
+                    p {
+                        opacity: 1;
+                        -webkit-transform: translate3d(0,0,0);
+                        transform: translate3d(0,0,0);
+                    }
+                }
+            }
+            .media-body{
+                padding: 0 10px;
+                .datemore {
+                    &:hover {
+                        color: $master-color-3;
+                    }
+                    .fa-sort-down {
+                        line-height: 16px;
+                        vertical-align: top;
+                    }
+                    .fa-sort-up{
+                        line-height: 16px;
+                        vertical-align: middle;
+                    }
+                }
+                a {
+                    color: $master-color-3;
+                    text-decoration: none;
+                }
+                h4{
+                    font-size:16px;
+                    line-height:25px;
+                    .title{
+                        font-weight: bold;
+                        font-size: 18px; 
+                        text-overflow:hidden;
+                        width: 600px;        
+                    }
+                }
+                
+                p {
+                    margin-top: 3px;
+                    margin-bottom: 0;
+                    line-height: 22px;
+                    font-size:12px;
+                    em {
+                        padding: 2px;
+                        margin-right: 5px;
+                        border: 1px solid $master-color-3;
+                        border-radius: 3px;
+                        color: $master-color-3;
+                        font-style: normal;
+                        .tooltip-arrow {
+                           border-right-color: #9a9898;
+                            border-left-color: #9a9898;
+                        }
+                       .in {
+                            opacity: 1;
+                        }
+                        .tooltip-inner {
+                            line-height: 26px;
+                            border-radius: 0;
+                            color: $master-color-1;
+                            text-align: left;
+                            background-color: $master-color-4;
+                            box-shadow: 0 1px 5px #9e9e9e;
+                        }
+                    }
+                    .city-icon {
+                        color: $greenTheme;
+                    }
+                    .theme-color{
+                        color: $master-color-3;
+                    }
+                }
+            }
+            .media-right {
+                display: table-cell;
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 198px;
+                text-align: center;
+                p {
+                    em {
+                        font-style: normal;
+                        color: $master-color-3;
+                    }
+                }
+                .btn {
+                    padding: 8px 30px;
+                    font-size:18px;
+                }
+                .price {
+                    font-size:30px;
+                    color: $master-color-3;
+                }
+                .btn-detail {
+                    font-size:18px;
+                    background-color: $master-color-3;
+                }
+                .remark {
+                    font-size:12px;
+                    .theme-color {
+                        color: $master-color-3;
+                    }
+                }
+            }
+
+        }
+    }   
+}
+.pages {
+    margin-top: 15px;
+    .pagination {
+        float:left;
+        margin: 0;
+        li {
+            a {
+                border-radius: 0;
+                margin-right: 5px;
+                font-weight: bold;
+                color: $master-color-2;
+            }
+            &.active {
+                a {
+                    background-color: $navbarColor;
+                    border-color: $navbarColor;
+                    color: $master-color-0;
+                }
+            }
+        }
+    }
+    .gopage {
+        float:left;
+        label {
+                padding-left: 15px;
+                padding-right: 15px;
+                font-weight: normal;
+                font-size:15px;
+        }
+        .current_page {
+            height: 32px;
+            line-height: 32px;
+            border:1px solid $borderColor;            
+            width: 40px;
+            text-align: center;
+        }
+        .btn-go {
+            padding: 5px 12px;
+            height: 32px;
+            line-height: 32px;
+            border: 1px solid $borderColor;
+            color: $master-color-2;
+            
+        }
+    }
+}

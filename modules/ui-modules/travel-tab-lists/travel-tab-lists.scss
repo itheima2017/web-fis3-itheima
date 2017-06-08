@@ -1,0 +1,123 @@
+ @import "../../css-modules/variables";
+
+.travel-tab-lists {
+    .nav-tabs {
+        li {
+            margin-bottom: 0;
+            font-size:16px;
+            a {
+                border: 0;
+                background-color: transparent;
+                color: $master-color-1;
+            }
+            &.active {
+                a {
+                    position: relative;
+                    border-bottom: 2px solid $master-color-3;
+                    color: $master-color-3;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 45%;
+                        width: 2px;
+                        height: 2px;
+                        border-width: 5px;
+                        border-style: dashed dashed solid dashed;
+                        border-color: transparent transparent $master-color-3 transparent;
+                    }
+                    &:hover,&:focus {
+                        border: 0;
+                        border-bottom: 2px solid $master-color-3;
+                        
+                    }
+                }
+            }
+                  
+        }
+    }
+    .tab-content {
+        padding:0 15px 15px;
+        margin-top: -2px;
+        border:1px solid $borderColor;
+        .travel-note-list {
+                .note-item {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid #f1eeee;
+                    .media-head {
+                        overflow: hidden;
+                        width: 515px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        line-height: 34px;
+                        font-size:18px;  
+                        a {
+                            text-decoration: none;
+                            color: $master-color-1;
+                            &:hover {
+                                color: $master-color-3;
+                            } 
+                        }    
+                    }
+                    .media-body {
+                        position: relative;
+                        max-height: 66px;
+                        overflow: hidden;
+                        line-height: 22px; 
+                        color: $master-color-2;
+                        }
+                    .media-author {
+                        margin-top: 15px;
+                        .author {
+                            .name { color:$master-color-3;a {color: $master-color-3;}}
+                            .looknum {
+                                padding-left: 15px;
+                                color: $master-color-2;
+                                font-size:12px;
+                            }
+                            span { display: inline-block;}
+                            img { width:30px;height: 30px;border-radius: 50%;}
+                        }
+                    }
+                    .goodnum { color:$master-color-3; cursor: pointer}
+                }
+        
+            .pages {
+                .pagination {
+                   float:left;
+                   margin: 0;
+                    li {
+                        a {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .gopage {
+                    float:left;
+                    label {
+                         padding-left: 15px;
+                         padding-right: 15px;
+                         font-weight: normal;
+                         font-size:15px;
+                    }
+                    .current_page {
+                        height: 32px;
+                        line-height: 32px;
+                        border:1px solid $borderColor;
+                        border-radius: 4px;
+                        width: 40px;
+                        text-align: center;
+                    }
+                    .btn-go {
+                        padding: 5px 12px;
+                        height: 32px;
+                        line-height: 32px;
+                        border: 1px solid $borderColor;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

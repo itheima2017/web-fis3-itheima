@@ -1,0 +1,44 @@
+ @import "../../modules/css-modules/variables";
+ @import "../../modules/css-modules/base";
+  @import "../../modules/ui-modules/sidebar/sidebar";
+ @import "../../modules/ui-modules/top-header/top-header";
+ @import "../../modules/ui-modules/header/header";
+ @import "../../modules/ui-modules/footer/footer";
+ @import "../../modules/ui-modules/travel-list-city-btn/travel-list-city-btn";
+ @import "../../modules/ui-modules/travel-list-search-bar/travel-list-search-bar";
+ @import "../../modules/ui-modules/travel-index-nav/travel-index-nav";
+ @import "../../modules/ui-modules/travel-index-imgroll/travel-index-imgroll";
+ @import "../../modules/ui-modules/travel-index-recommend/travel-index-recommend";
+
+
+
+
+
+.travel-index {
+  // background-color: $master-color-4;
+  padding-bottom: 15px;
+  .container {
+      width: 1170px;
+      padding-left: 0;
+      padding-right: 0;
+        @media  (max-width:1200px) {
+        .container {
+            width: 980px;      
+          }  
+        }
+        @media  (min-width:1200px) {
+        .container {
+            width: 1170px;
+          }
+        }
+                      
+        .maincontent {
+          margin-top: 10px;
+        }
+        .navintro {
+            overflow:hidden;   
+          }
+    }
+}
+   
+ 

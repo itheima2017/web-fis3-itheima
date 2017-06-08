@@ -1,0 +1,100 @@
+@import "../../css-modules/variables";
+
+.feedback-form {
+    p {margin: 0}
+    // reset
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid $borderColor;
+    border-top-width: 2px;
+    border-top-color: $master-color-3;
+    .formBox {
+        padding: 15px 0 15px;
+    }
+    h5 {
+        margin: 0;
+        font-size:16px;
+        color: $master-color-3;
+    }
+    .tips {
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        border: 1px dashed #ffce88;
+        color: $master-color-2;
+        background-color: #ffffe0;
+        font-size:12px;
+    }
+    .form-box {
+        dl {  
+            margin-bottom: 10px;
+            font-size:12px;
+            dt {
+                float:left;
+                height: 28px;
+                width: 78px;
+                line-height: 28px;
+                font-weight: normal;
+                span {
+                    padding-right: 3px;
+                    color: red;
+                }
+            }
+            dd {
+                float:left;
+                margin-right: 15px;
+                height: 28px;
+                line-height: 28px;
+                color: $master-color-2;
+                .radiobox {
+                    vertical-align: middle;
+                    margin-top: -2px;
+                }
+                label {
+                    margin-bottom: 0;
+                    font-weight: normal;
+                }  
+                &.content {
+                    height: auto;
+                    padding: 0;
+                    margin-right: 0;
+                    .inputWrap {
+                        position: relative;
+                        float: left;
+                        border: 1px solid $borderColor;
+                        border-top-color: $master-color-2;
+                        .inputarea {
+                            height: 128px;
+                            width: 650px;
+                            float:left;
+                            border: 0;
+                            line-height: 20px;
+                            background-color: transparent;                         
+                            resize: none;
+                        }
+                        .inputphone {
+                            width: 500px;
+                            height: 26px;
+                            padding-top: 2px;
+                            padding-bottom: 2px;
+                            border: 0;
+                            line-height: 26px;
+                        }
+                        .inputcode {
+                            width: 80px;
+                            height: 26px;
+                            padding-top: 2px;
+                            padding-bottom: 2px;
+                            border: 0;
+                            line-height: 26px;
+                        }                      
+                    }
+                }
+                 .btn-submit {
+                    border-radius: 0;
+                    padding: 4px 25px;
+                }  
+            }
+        }
+    }
+}

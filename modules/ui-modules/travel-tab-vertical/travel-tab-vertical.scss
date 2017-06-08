@@ -1,0 +1,90 @@
+ @import "../../css-modules/variables";
+
+.travel-tab-vertical {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 2px solid $master-color-3;
+    overflow:hidden;
+    .sidebar-nav {
+        padding: 0;
+        border-right: 1px solid $borderColor;
+        h5 {
+            padding: 0 15px;
+            margin: 0;
+            line-height: 42px;
+            height: 42px;
+            background-color:$master-color-3;
+            color: $master-color-0;
+            font-size:18px;
+        }
+        .nav-header {
+         display: block;
+         padding: 0 15px;
+         height: 42px;
+         border-bottom: 1px solid #dfdfdf;
+         line-height: 42px;
+         text-decoration: none;
+         background-color:#eaeaea;
+         color: $master-color-1;
+         &.on {
+             background-color: #FF8C76;
+             color: $master-color-0;
+         }
+         .glyphicon {
+             height: 42px;
+             line-height: 42px;
+         }
+         &.collapsed {
+             .glyphicon-chevron-toggle {
+                 &:before { content: "\e113"}
+             }
+         }
+         .glyphicon-chevron-toggle {
+                 &:before { content: "\e114"}
+             }
+        }
+        .nav-tabs {
+            li {
+                padding: 0 15px;
+                margin-bottom: 0;
+                height: 42px;  
+                float: none;             
+                line-height: 42px;
+                background-color: $master-color-4;
+                font-size:12px;
+                a {
+                    padding: 0;
+                    height: 42px;
+                    line-height: 42px;
+                    color: $master-color-2;
+                    cursor: pointer;
+                    &:hover{
+                        border:0;
+                        color: $hoverColor;
+                        background-color: transparent;
+                    }
+                }
+                &.active {
+                    a {
+                        border: 0;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+    }
+    .tab-content {
+        h4 {
+            line-height: 32px;
+            border-bottom: 1px solid $borderColor;
+        }
+        .step-content {
+            font-size:12px;
+            .index-title {
+                color: $navbarColor;
+                font-weight: bold;
+            }
+        }
+    }
+}

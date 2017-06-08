@@ -1,0 +1,33 @@
+{
+    "list": {
+        "pagename": "爱游网",
+        "data": [
+            {
+                "title": "主结构页面",
+                "datas": [
+                    {
+                        "title": "主页",
+                        "url": "travel-index.html"
+                    },
+                    {
+                        "title": "列表页",
+                        "url": "travel-list.html"
+                    }
+                ]
+            },
+            {
+                "title": "用户页面",
+                "datas": [
+                    {
+                        "title": "登录",
+                        "url": "travel-list.html"
+                    },
+                    {
+                        "title": "注册第一步",
+                        "url": "index/ind.html"
+                    }
+                ]
+            }
+        ]
+    }
+}

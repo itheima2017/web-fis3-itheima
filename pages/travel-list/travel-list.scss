@@ -1,0 +1,72 @@
+ @import "../../modules/css-modules/variables";
+   @import "../../modules/css-modules/base";
+ @import "../../modules/ui-modules/top-header/top-header";
+ @import "../../modules/ui-modules/header/header";
+ @import "../../modules/ui-modules/footer/footer";
+  @import "../../modules/ui-modules/sidebar/sidebar";
+ @import "../../modules/ui-modules/travel-list-city-btn/travel-list-city-btn";
+ @import "../../modules/ui-modules/travel-list-search-bar/travel-list-search-bar";
+
+ @import "../../modules/ui-modules/travel-list-old-scan/travel-list-old-scan";
+ @import "../../modules/ui-modules/travel-list-product-list/travel-list-product-list";
+ @import "../../modules/ui-modules/travel-list-typeselect-bar/travel-list-typeselect-bar";
+ html,body {height: 100%}
+ .travel-list-main { min-height: 100%;overflow: hidden;.travel-list-content {
+   padding-bottom: 300px;
+ }}
+
+
+.travel-list{
+  background-color: $master-color-4;
+  padding-bottom: 15px;
+  .container {
+      width: 1170px;
+      padding-left: 0;
+      padding-right: 0;
+        @media  (max-width:1200px) {
+        .container {
+            width: 980px;      
+          }  
+        }
+        @media  (min-width:1200px) {
+        .container {
+            width: 1170px;
+          }
+        }
+                      
+        .maincontent {
+          margin-top: 10px;
+          overflow:hidden;
+          .listbox {
+            float:left;
+            width: 930px; 
+            .order {
+              margin-top: 12px;
+              padding: 8px 0;
+              border: 1px solid $borderColor;
+              background-color: $master-color-0;
+              ul {
+                margin-bottom: 0;               
+                li {
+                 padding: 0 15px;
+                 border-right: 1px solid $borderColor;
+                 display: inline-block;
+                 font-size: 12px;
+                 color: $master-color-2;
+                 &.active {
+                   color: $master-color-3;
+                 }
+                 .fa {
+                   vertical-align: top;
+                 }
+                }
+              }
+            }
+          }
+        }
+        
+    }
+}
+   
+
+ 

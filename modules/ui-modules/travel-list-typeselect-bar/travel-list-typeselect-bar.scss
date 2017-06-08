@@ -1,0 +1,184 @@
+ @import "../../css-modules/variables";
+
+.typeselect-bar {
+    margin-top: 15px;
+    background-color: $master-color-0;
+   .fa-sort-down {
+        line-height: 24px;
+        vertical-align: top;
+    }
+    .fa-sort-up {
+        line-height: 24px;
+        vertical-align: middle;
+    }
+    .nav-tabs{
+        border-bottom-width: 2px;
+        border-bottom-color: $master-color-3;
+        background-color: $master-color-4;
+        > li {
+            margin-bottom: 0;
+            border-top: 1px solid $borderColor;
+            border-right: 1px solid $borderColor;
+            background-color:$master-color-0;
+            &:first-child {
+                border-left: 1px solid $borderColor;
+            }
+            &.active {
+                border-color: $master-color-3;
+            }
+            a {
+                padding-top: 7px;
+                padding-bottom: 7px;
+                margin-right: 0;
+                border-radius: 0;
+                color: $master-color-1;
+                font-size:16px;
+                sup {
+                    color: $master-color-3;
+                }
+                &:hover,&:focus {
+                    color: $master-color-3;
+                    border: 1px solid transparent;
+                    sup {
+                        color: $master-color-3;
+                    }
+                }
+            }
+            &.active{
+                > a {
+                    color:$master-color-0;
+                    background-color:$master-color-3;
+                    border-color: $master-color-3;
+                    sup {
+                        color: $master-color-0;
+                    }
+                &:hover,&:focus{
+                    color:$master-color-0;
+                    background-color:$master-color-3;
+                    sup {
+                        color: $master-color-0;
+                    }
+                }
+            }
+            }
+            
+        }
+    }
+    .tab-content{
+        padding: 10px 15px 8px;
+        border: 1px solid $borderColor;
+        border-top: 0;
+        line-height: 30px;
+        font-size:12px;
+         a { 
+                color: $master-color-1;
+                text-decoration: none;
+                &:hover {
+                    color: $master-color-3;
+                }
+
+            }
+        .selected {
+            h5 {
+                display: inline-block;
+
+            }
+            .selected-item {
+                display: inline-block;
+                line-height: 12px;
+                margin-right: 6px;
+                padding: 3px 0 5px;
+                border: 1px solid $master-color-3;
+                .choosetitle {
+                    line-height: 12px;
+                    padding: 4px 2px;
+                    background-color: $master-color-3;
+                    color: $master-color-0;
+                }
+                .choosedetail {
+                    padding: 4px 2px;
+                }
+                .glyphicon-remove {
+                    color: $master-color-3;
+                    cursor:pointer;
+                }
+            }
+            .clearchoose {
+                width: 75px;
+                float:right;
+            }
+        }
+        .lines{
+            padding: 4px 0;
+            border-bottom: 1px dotted #e6e6e6;
+            a {
+                color: $master-color-1;
+                &:hover {
+                    color: $master-color-3;
+                }
+
+            }
+            .none {
+                display: none;
+                dt {
+                    width: 60px;
+                }
+               
+            }
+            .tool {
+                display: none;
+                text-align: center;
+                 .sure {
+                    padding: 3px;
+                    border-radius: 4px;
+                    background-color: $master-color-3;
+                    color: $master-color-0;
+                }
+            }
+            dl{
+                margin-bottom:0;
+                width: 810px;
+                display: inline-block;
+                dt{
+                    display: inline-block;
+                    color: $master-color-2;
+                    font-weight: normal;
+                }
+                dd {
+                    display: inline-block;
+                    ul {
+                        margin-bottom: 0;
+                        li {
+                            display: inline-block;
+                            padding: 0 10px;
+                            .check {
+                                display: none;
+                            }
+                            .cdate {
+                                width: 75px;
+                            }
+                        }
+                    }
+                }
+            }
+            .outdate{
+                display: inline-block;
+                .datesure {
+                    
+                        padding: 4px;
+                        border-radius: 4px;
+                        color: $master-color-0;
+                        background-color:$master-color-3;
+                   
+                }
+            }
+            .morechoose {
+                float: right;
+                
+        }
+        }
+        
+        
+    }
+}
+

@@ -1,0 +1,43 @@
+@import "../../css-modules/variables";
+
+.travel-author-home {
+    position:relative;
+    .author-intro {
+        position:absolute;
+        top:35%;
+        width: 100%;
+        .author-info {
+            width:150px;
+            margin:0 auto;
+            vertical-align:middle;
+            img {
+                width:80px;
+                height:80px;
+                border-radius:50%;
+            }
+            .pull-right {
+                
+                span { 
+                    display:block;
+                    }
+                em {
+                    font-style:normal;
+                    }
+                .name {
+                    padding-bottom:15px;
+                    line-height:32px;
+                    height:32px;
+                    font-size:16px;
+                    
+                    color:$master-color-0;
+
+                    }
+                .notenum {
+                    font-size:12px;
+                    color:#7E7676;
+                }
+             }
+        }
+    }
+     
+}

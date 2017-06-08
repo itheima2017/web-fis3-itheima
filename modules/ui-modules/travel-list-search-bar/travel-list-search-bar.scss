@@ -1,0 +1,95 @@
+ @import "../../css-modules/variables";
+
+.travel-search {
+      display: inline-block;
+      margin-left: 15px;
+    .main-search {
+        display: inline-block;
+        border: 2px solid $master-color-3;
+        overflow:hidden;
+        .dropdown-choose {
+            float:left;
+            width: 90px;
+            #dropdown {
+                position: relative;
+                margin: 0 auto;
+                text-align: center;
+                .choosed {
+                    border-right: 1px solid #ccc;
+                    line-height: 32px;
+                    cursor: pointer;                 
+                }
+                 .arrow-down {
+                        position: absolute;
+                        top: 10px;
+                        right: 6px;
+                        font-size:10px;
+                        color: $master-color-2;
+                    }
+                ul {
+                    display: none;
+                    position: fixed;
+                    margin-left: -2px;
+                    // margin-top: -100px;
+                    z-index: 9999;
+                    border-top: 1px solid #ccc;
+                    border-left: 2px solid $master-color-3;
+                    border-right: 2px solid $master-color-3;
+                    border-bottom: 2px solid $master-color-3;
+                    background-color: $master-color-4;
+                    li {
+                        padding: 3px 24px 3px 23px;
+                        line-height: 24px;
+                        text-align: center;
+                        a {
+                            display: block;
+                            color:$master-color-2;
+                            text-decoration:none;
+                        }
+                        &:hover {
+                             background-color: #ddd;
+                        }
+                    }
+                }
+            }
+        }
+        .search-area {
+            width:668px;
+             @media (max-width:1200px){
+                    width: 590px !important;
+                }
+            .input-search {
+                width: 505px;
+                height:32px;
+                 @media (max-width:1200px){
+                    width: 390px !important;
+                }
+                padding-left: 10px;
+                border:0;
+                border-color: $master-color-3;
+                border-radius: 0;
+                line-height: 32px;
+            }
+            .search-btn {
+                padding-left: 20px;
+                padding-right: 20px;
+                float: right;
+                border-color: $master-color-3;
+                border-radius: 0;
+                line-height: 32px;
+                font-size: 16px;
+                background-color:$master-color-3;
+                color: $master-color-0; 
+            }
+        }
+    }
+    .hot-words {
+        float:right;
+        margin-left: 10px;
+        line-height: 32px;
+        a {
+            padding-left: 8px;
+        }
+    }
+    
+}

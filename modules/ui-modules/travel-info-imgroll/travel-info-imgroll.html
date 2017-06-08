@@ -1,0 +1,126 @@
+<div class="travel-info-imgroll">
+   <div id="imgscroll" class="slider-pro">
+       <div class="sp-slides">
+				<div class="sp-slide">
+					<img class="sp-image" src="blank.gif" data-src="./image1_medium.jpg" data-retina="./image1_large.jpg" />
+				</div>
+				<div class="sp-slide">
+					<img class="sp-image" src="blank.gif" data-src="./image2_medium.jpg" data-retina="./image2_large.jpg" />
+				</div>
+				<div class="sp-slide">
+					<img class="sp-image" src="blank.gif" data-src="./image3_medium.jpg" data-retina="./image3_large.jpg" />
+				</div>
+				<div class="sp-slide">
+					<img class="sp-image" src="blank.gif" data-src="./image4_medium.jpg" data-retina="./image4_large.jpg" />
+
+				</div>
+				<div class="sp-slide">
+					<img class="sp-image" src="blank.gif" data-src="./image5_medium.jpg" data-retina="./image5_large.jpg" />
+
+				</div>
+				<div class="sp-slide">
+					<img class="sp-image" src="blank.gif" data-src="./image6_medium.jpg" data-retina="./image6_large.jpg" />
+				</div>
+
+				<div class="sp-slide">
+					<img class="sp-image" src="blank.gif" data-src="./image7_medium.jpg" data-retina="./image7_large.jpg" />
+
+				</div>
+
+				<div class="sp-slide">
+					<img class="sp-image" src="blank.gif" data-src="./image8_medium.jpg" data-retina="./image8_large.jpg" />
+
+				</div>
+
+			</div>
+
+			<div class="sp-thumbnails">
+				<div class="sp-thumbnail">
+					<div class="sp-thumbnail-image-container">
+						<img class="sp-thumbnail-image" src="./image1_thumbnail.jpg" />
+					</div>
+
+				</div>
+
+				<div class="sp-thumbnail">
+					<div class="sp-thumbnail-image-container">
+						<img class="sp-thumbnail-image" src="./image2_thumbnail.jpg" />
+					</div>
+
+				</div>
+
+				<div class="sp-thumbnail">
+					<div class="sp-thumbnail-image-container">
+						<img class="sp-thumbnail-image" src="./image3_thumbnail.jpg" />
+					</div>
+
+				</div>
+
+				<div class="sp-thumbnail">
+					<div class="sp-thumbnail-image-container">
+						<img class="sp-thumbnail-image" src="./image4_thumbnail.jpg" />
+					</div>
+
+				</div>
+
+				<div class="sp-thumbnail">
+					<div class="sp-thumbnail-image-container">
+						<img class="sp-thumbnail-image" src="./image5_thumbnail.jpg" />
+					</div>
+
+				</div>
+
+				<div class="sp-thumbnail">
+					<div class="sp-thumbnail-image-container">
+						<img class="sp-thumbnail-image" src="./image6_thumbnail.jpg" />
+					</div>
+
+				</div>
+
+				<div class="sp-thumbnail">
+					<div class="sp-thumbnail-image-container">
+						<img class="sp-thumbnail-image" src="./image7_thumbnail.jpg" />
+					</div>
+
+				</div>
+
+				<div class="sp-thumbnail">
+					<div class="sp-thumbnail-image-container">
+						<img class="sp-thumbnail-image" src="./image8_thumbnail.jpg" />
+					</div>
+
+				</div>
+
+			</div>
+		
+   </div>
+</div>
+<link href="../../../plugins/slider-pro/slider-pro.min.css" rel="stylesheet" media="screen"/>
+<script src="../../../plugins/slider-pro/jquery.sliderPro.min.js"></script>
+<script type="text/javascript">
+			$(document).ready(function($) {
+				$('#imgscroll').sliderPro({
+					width: 620,
+					height: 380,
+					orientation: 'vertical',
+					loop: false,
+					arrows: true,
+					buttons: false,
+					thumbnailsPosition: 'right',
+					thumbnailPointer: true,
+					thumbnailWidth: 118,
+					breakpoints: {
+						800: {
+							thumbnailsPosition: 'bottom',
+							thumbnailWidth: 270,
+							thumbnailHeight: 100
+						},
+						500: {
+							thumbnailsPosition: 'bottom',
+							thumbnailWidth: 120,
+							thumbnailHeight: 50
+						}
+					}
+				});
+			});
+		</script>

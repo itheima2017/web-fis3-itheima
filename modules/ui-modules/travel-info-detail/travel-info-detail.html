@@ -1,0 +1,76 @@
+<div class="info-detail">
+    <div class="productid">产品编号：257135&nbsp;&nbsp;出港城市：上海&nbsp;&nbsp;
+        <span class="operate">
+                <em><span class="glyphicon glyphicon-heart-empty"></span>收藏</em>
+        <em><span class="glyphicon glyphicon-share-alt"></span>分享</em>
+        </span>
+    </div>
+    <div class="price">￥<span class="money">28789</span>/人起<a href="javascript:;" class="lowprice">（降价通知）</a><a href="javascript:;">起价说明</a></div>
+    <div class="intro">
+        <ul class="list-unstyled">
+            <li>服务特色：<span class="glyphicon glyphicon-ok-circle"></span> 纯玩 <span class="glyphicon glyphicon-ok-circle"></span>                无购物</li>
+            <li>可享优惠：<span class="marks"><em>积分抵扣</em> <i>抵800元/人</i></span> <span class="btn-cash">点评返现</span></li>
+            <li class="remark">*以上优惠适用于2017-06-08出游</li>
+        </ul>
+        <ul class="list-unstyled setting">
+            <li>出发日期：<input type="text" class="godate" placeholder="请选择出发日期"></li>
+            <li>
+                <span class="person">成</span>人：
+                <div class="people-num">
+                    <a href="javascript:void(0)" class="tool-btn minus active"><i class="glyphicon glyphicon-minus"></i></a>
+                    <input type="text" class="num" value="1">
+                    <a href="javascript:void(0)" class="tool-btn plus "><i class="glyphicon glyphicon-plus"></i></a>
+                </div>
+            </li>
+            <li>
+                <span class="person">儿</span>童：
+                <div class="people-num">
+                    <a href="javascript:void(0)" class="tool-btn minus active"><i class="glyphicon glyphicon-minus"></i></a>
+                    <input type="text" class="num" value="1">
+                    <a href="javascript:void(0)" class="tool-btn plus"><i class="glyphicon glyphicon-plus"></i></a>
+                </div>
+            </li>
+            <li><span class="person">总</span>价：<span class="allprice">￥26897</span></li>
+        </ul>
+        <div class="preorder">
+            <a href="travel-preorder.html" target="_blank" class="btn btn-lg btn-preorder">立即预订</a>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+<script type="text/javascript" src="../../../plugins/jquery.datetime.picker/jquery.datetimepicker.full.min.js"></script>
+<link rel="stylesheet" href="../../../plugins/jquery.datetime.picker/jquery.datetimepicker.css" />
+
+<script type="text/javascript">
+$(function(){
+    $.datetimepicker.setLocale('ch');//设置中文
+     $('.godate').datetimepicker({
+        /*具体配置*/
+        timepicker:false, //去掉时间
+        format:'Y/m/d', //时间格式
+        formatDate:'Y/m/d',
+        minData:'-1970/01/01',
+        maxData:'+1970/01/02'   
+    });
+        
+        $('.minus').attr('disabled',true); //初始化数量为1,并失效减
+        //数量增加操作
+        $(".plus").click(function(){ 
+            
+            var t = $(this).parent().children(".num"); // 获得文本框对象
+            t.val(Math.abs(parseInt(t.val()))+1);   // 给获取的val加上绝对值，避免出现负数
+            if (parseInt(t.val())!=1){
+            $('.minus').attr('disabled',false);
+            };
+        }) 
+        //数量减少操作
+        $(".minus").click(function(){
+            var t = $(this).parent().children(".num"); // 获得文本框对象
+            t.val(Math.abs(parseInt(t.val()))-1);
+            if (parseInt(t.val())==1){
+            $('.minus').attr('disabled',true);
+            };
+        })
+})     
+</script>

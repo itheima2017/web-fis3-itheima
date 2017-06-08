@@ -1,0 +1,26 @@
+ @import "../../css-modules/variables";
+footer {
+    height:289px;
+	margin-top:-289px;
+    background-color: $borderColor;
+    .foot-box {
+        padding-top: 25px;
+        height: 289px;
+    }
+    dl { 
+        width:12%; float:left; margin-right: 10px;
+        dt { 
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        dd { 
+            font-size:14px;
+            color:$master-color-2;
+            line-height: 28px;
+        }
+       &:last-child,
+       &:nth-last-child(2){ 
+        float:right;
+       }
+    }
+}

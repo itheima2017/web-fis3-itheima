@@ -1,0 +1,84 @@
+ @import "../../css-modules/variables";
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 40px;
+    min-height: 100%;
+    background-color: $master-color-1;;
+    color: $master-color-2;
+    li {
+        position: relative;
+        line-height: 38px;
+        font-size:22px;
+        text-align: center;
+        a {
+            color: $master-color-2;
+        }
+        &.active {
+            background-color: $master-color-3;
+            color: $master-color-4;
+            cursor:pointer;
+            a {
+                color: $master-color-0;
+            }
+           }
+        .hidetext {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 40px;
+            width: 80px;
+            font-size:14px;
+            background-color: $master-color-3;
+            a {
+                color: $master-color-0;
+            }
+            }
+        }
+
+
+
+
+    .slider-top {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+    .slider-bottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        .cd-top {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            /* image replacement properties */
+            overflow: hidden;
+            background: $master-color-3 ;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            .gotop {
+                color: #fff;
+            }
+            &.cd-is-visible {
+                /* the button becomes visible */
+                visibility: visible;
+                opacity: 1;
+            }
+            &.cd-fade-out{
+                &:hover {
+                /* 如果用户继续向下滚动,这个按钮的透明度会变得更低 */
+                opacity: 1;
+                background-color: $master-color-3;
+                }
+            }
+        }       
+    }
+}

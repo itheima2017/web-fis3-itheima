@@ -1,0 +1,72 @@
+<script type="text/ejs"  data-json="./travel-note-lists.json">
+
+<div class="travel-tab-lists">
+    <!--nav tabs-->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active" role="presentation"><a href="#note1" aria-controls="note1" role="tab" data-toggle="tab">精品推荐</a><li>
+        <li role="presentation"><a href="#note2" aria-controls="note2" role="tab" data-toggle="tab">热门游记</a></li>
+        <li role="presentation"><a href="#note3" aria-controls="note3" role="tab" data-toggle="tab">最新发布</a></li>
+    </ul>
+    <!--tab content-->
+    <div class="tab-content">
+        <div id="note1" role="tabpanel" class="tab-pane active">
+            <div class="travel-note-list">
+                <ul class="list-unstyled">
+                     <% for(var i=0;i<notelists.length;i++){ %>
+                        <li class="clearfix note-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="<%=notelists[i].img%>" alt="" >
+                                </div>
+                                <div class="media-right">
+                                    <div class="media-head"><a href="travel-notes-info.html" target="_blank"><%=notelists[i].title%></a></div>
+                                    <div class="media-body"> <%=notelists[i].desc%></div>
+                                    <div class="media-author">
+                                        <div class="pull-left author">
+                                            <span class="photo"><img src="<%=notelists[i].photo%>" /></span>
+                                            <span class="name"><a href="#"><%=notelists[i].author%></a></span>
+                                            
+                                            <span class="looknum"><i class="glyphicon glyphicon-eye-open"></i> <%=notelists[i].looknum%></span>
+                                        </div>
+                                        <div class="pull-right">
+                                            <span class="goodnum"><i class="glyphicon glyphicon-thumbs-up"></i> <%=notelists[i].zannum%></span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                     <% } %>
+
+                </ul>
+                <div class="pull-right pages">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#">&laquo;</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                   <div class="gopage">
+                       <label>跳转到</label>
+                       <input type="text" class="current_page" value="1">
+                       <span><a href="" class="btn-go">GO</a></span>
+                       <!--<a class="btn btn-default">GO</a>-->
+                   </div>
+                   <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div id="note2" role="tabpanel" class="tab-pane">
+            热门游记
+        </div>
+        <div id="note3" role="tabpanel" class="tab-pane">
+            最新发布
+        </div>
+    </div>
+</div>
+
+</script>

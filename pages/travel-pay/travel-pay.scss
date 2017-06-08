@@ -1,0 +1,99 @@
+@import "../../modules/css-modules/variables";
+
+
+.travel-pay {
+    min-height:100%;
+	height:auto !important;
+	height:100%;  // 解决IE6不识别min-height的问题
+    .header {
+        padding: 8px 0;
+        border-bottom: 1px solid $borderColor;
+        .logo {
+        line-height:60px;
+        font-size:13px;
+        img {width: 150px;}
+        .pull-right {
+            .btn-exit {
+                padding:0 4px;
+                border: 1px solid $borderColor;
+                color: $master-color-1;
+                text-decoration: none;
+                &:hover{
+                    background-color: $master-color-3;
+                    color: $master-color-0;
+                    }
+                }
+            em {font-style: normal;}
+        }
+    }
+    }
+    
+    .pay-box {
+        margin: 15px 0;
+        border: 1px solid $borderColor;
+        border-top-color: $master-color-3;
+        border-top-width: 2px;
+        .pay-title {
+            padding: 5px 10px;
+            line-height: 36px;
+            font-size:16px;
+            background-color: $master-color-4;
+            .title-name{
+                span {
+                    font-size: 12px;
+                }
+            }
+            .all-price {
+                color: $master-color-3;
+                font-size:18px;
+            }
+        }
+        .pay-order,
+        .pay-info {
+            padding-left: 15px;
+            padding-right: 15px;
+            
+            li {
+                line-height: 28px;
+            }
+        }
+        .pay-order {
+            border-bottom: 1px dashed $borderColor;
+        }
+        p {
+            padding-left: 15px;
+            .pay-time {
+                color: $master-color-3;
+            }
+        }
+        
+    }
+    .pay-btns {
+        overflow: hidden;
+        margin: 10px 0;
+        line-height: 36px;
+        text-align: center;
+        .btn-pay {
+            padding: 6px 20px;
+            margin-right: 10px;
+            background-color: $master-color-3;
+            color: $master-color-0;
+            text-decoration: none;
+            &:hover {
+                background-color: $hoverColor;
+                }
+           }
+        }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
+        height:38px;
+        border-top: 1px solid $borderColor;
+        background-color:$master-color-4;
+        text-align: center;
+        font-size:12px;
+        color: $master-color-1;
+    }
+}

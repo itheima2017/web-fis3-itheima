@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../assets/img/favicon.ico">
+
+  <title>爱游网-列表页</title>
+
+</head>
+
+<body>
+ <div class="wrapper">
+        <div class="wrapper-content">
+   
+  <!-- 页面头部 -->
+  <link rel="import" href="../../modules/ui-modules/top-header/top-header.html?__inline">
+  <link rel="import" href="../../modules/ui-modules/header/header.html?__inline">
+  <div class="travel-list">
+
+    <div class="container">
+      <div class="maincontent">
+        <!-- 搜索区域 -->
+        <link rel="import" href="../../modules/ui-modules/travel-list-city-btn/travel-list-city-btn.html?__inline">
+        <link rel="import" href="../../modules/ui-modules/travel-list-search-bar/travel-list-search-bar.html?__inline">
+        <div class="clearfix"></div>
+        <!-- 调用内容组件 -->
+        <div class="listbox">
+          <link rel="import" href="../../modules/ui-modules/travel-list-typeselect-bar/travel-list-typeselect-bar.html?__inline">
+          <div class="order"> 
+            <ul class="unstyled">
+              <li class="active">推荐</li>
+              <li>最新</li>
+              <li>销量 <i class="fa fa-sort-down" aria-hidden="true"></i></li>
+              <li>价格 <i class="fa fa-sort-down" aria-hidden="true"></i></li>
+              <li>天数 <i class="fa fa-sort-down" aria-hidden="true"></i></li>
+              <li>点评 <i class="fa fa-sort-down" aria-hidden="true"></i></li>
+              
+            </ul>
+          </div>
+          <link rel="import" href="../../modules/ui-modules/travel-list-product-list/travel-list-product-list.html?__inline">
+        </div>
+
+        <link rel="import" href="../../modules/ui-modules/travel-list-old-scan/travel-list-old-scan.html?__inline">
+
+        <div class="clearfix"></div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- /container -->
+ </div>
+  </div>
+  <!-- 页面底部 -->
+  <link rel="import" href="../../modules/ui-modules/footer/footer.html?__inline">
+  <!--侧边栏-->
+  <link rel="import" href="../../modules/ui-modules/sidebar/sidebar.html?__inline">
+
+  <!-- 页面 css js -->
+  <script src="./travel-list.js" type="text/javascript"></script>
+  <link href="./travel-list.scss" rel="stylesheet">
+  <script>
+      
+      $(function () { $("em a").tooltip({html : true });
+      });
+   </script>
+
+</body>

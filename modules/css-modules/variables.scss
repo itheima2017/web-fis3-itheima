@@ -1,0 +1,18 @@
+@charset "UTF-8"; 
+/*
+ * colors variables
+ */
+// 3色 4色 配色方案
+$master-color-0: #fff;// 白色：主体背景、导航链接、、
+$master-color-1: #333;// 黑色：说明类字体颜色、、、、
+$master-color-2: #666;//  灰色：目的地、链接字体颜色、、
+$master-color-3: #f63;// 橙色：主题组件颜色、装饰类、反转字体、、
+$master-color-4:#fafafa;// 米白色：头部、、、
+ 
+
+$navbarColor: #4c5a65;// 深灰色：头部导航背景色、、、、
+
+$hoverColor:#D45B26;   //灰色：边框颜色、底部背景颜色
+$blueTheme:#2da1e7;  //蓝色：推荐区1颜色
+$greenTheme:#50b400;  //绿色：推荐区2颜色、商品列表边框、、、
+$borderColor:#ddd;   //灰色：边框颜色

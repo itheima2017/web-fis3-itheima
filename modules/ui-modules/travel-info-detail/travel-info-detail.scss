@@ -1,0 +1,164 @@
+ @import "../../css-modules/variables";
+
+  .info-detail {
+              float:left;
+              _display: inline-block;
+              padding:15px;
+              padding-left: 0;
+              width: 420px;
+              font-size:12px;
+              color: $navbarColor;
+              .productid {
+                  line-height: 36px;
+                  margin-bottom: 6px;
+              }
+              hr {
+                margin-top: 10px;
+                margin-bottom: 10px;
+              }
+              .operate { 
+                  float:right;
+                  padding-right:15px;
+                  .glyphicon {
+                      margin-right: 2px;
+                      color: $master-color-3;                     
+                  }
+                  em {
+                      font-style: normal;
+                      margin-left: 15px;
+                  }
+              }
+              @media (max-width:1200px) {
+                  width: 400px;
+              }
+              .price {
+                  padding: 15px;
+                  background-color:#fff4e6;
+                  color: $master-color-3;
+                  a {
+                      text-decoration: none;
+                  }
+                  .lowprice {
+                          color: $master-color-3;
+                      }
+                  .money {
+                      color: $master-color-3;
+                      font-size:30px;
+                      
+                  }
+              }
+              .intro {
+                  overflow: hidden;
+                  position: relative;
+                  .setting {
+                      float:left;
+                      width: 50%;
+                  }
+                   .preorder {
+                        margin-right: 25px;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                        .btn-preorder {
+                            margin-top: 25px;
+                            padding: 20px 15px;
+                            background-color:$master-color-3;
+                            color: $master-color-0;
+                            font-size: 16px;
+                        }
+                }
+                  ul {
+                      margin-bottom: 0;
+                      li {
+                          line-height: 32px;
+                          padding: 3px 0;
+                          .picker-type {
+                            display: inline-block;  
+                          }
+                          .people-num {
+                              display: inline-block;
+                              border-radius: 2px;
+                                box-sizing: border-box;
+                                border: 1px solid $borderColor;
+                                display: inline-block;
+                                background-color: #fff;
+                                .tool-btn {
+                                    width: 20px;
+                                    height: 26px;                                   
+                                    padding: 0 4px;
+                                    color: $greenTheme;
+                                    &.minus { padding-left: 4px;padding-right: 0;}
+                                    &.plus {padding-left: 0;padding-right: 4px;}
+                                }
+                                .num {
+                                    width: 33px;
+                                    height: 33px;
+                                    box-sizing: border-box;
+                                    border-left: 1px solid $borderColor;
+                                    border-right: 1px solid $borderColor;
+                                    display: inline-block;
+                                    border-top: 0;
+                                    border-bottom: 0;
+                                    text-align: center;
+                                }
+                          }
+                          .glyphicon-ok-circle {
+                              color: $master-color-3;
+                          }
+                          .person {
+                              letter-spacing: 24px;
+                          }
+                          .allprice {
+                               color: $master-color-3;
+                               font-size:20px;
+                               font-weight: bold;
+                          }
+                          select {
+                              option {
+                                  span {
+                                      color: $master-color-3;
+                                  }
+                              }
+                          }
+                          &.remark {
+                              color: $master-color-2;
+                          }                    
+                          input {
+                              &.godate{
+                                  line-height: 28px;
+                                  height: 28px;
+                                  padding-left: 8px;
+                                  margin: 0;
+                                  border:1px solid $borderColor;
+                                  width: 100px;
+                                  
+                              }
+                          }
+                          .marks {
+                              box-sizing: border-box;    
+                              padding: 2px 5px 2px 0;                  
+                              border: 1px solid $master-color-3;
+                              border-radius: 2px;
+                              cursor: pointer;
+                              em {
+                                  padding: 2px 5px;
+                                  font-style: normal;
+                                  background-color: $master-color-3;
+                                  color: $master-color-0;
+                              }
+                              i{
+                                  padding: 2px 5px;
+                                  font-style: normal;
+                              }
+                          }
+                          .btn-cash {
+                              padding: 2px 8px;
+                              border-radius: 2px;
+                              color: $master-color-0;
+                              background-color: $greenTheme;
+                          }
+                      }
+                  }
+              }
+              
+          }

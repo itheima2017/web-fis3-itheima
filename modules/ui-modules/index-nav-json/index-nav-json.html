@@ -1,0 +1,31 @@
+<script type="text/ejs" data-json="./data.json">
+<div class='nav'>
+    <% for(var i=0;i<list.length;i++){ %>
+            <div><i class="glyphicon glyphicon-collapse-down"><%=list[i].title%></i>
+            <% for(var j=0;j<list[i].dataList.length;j++){ %>
+                <%if(list[i].dataList[j].url){%>
+                <li><a href="<%=list[i].dataList[j].url%>" target="right" ><%=list[i].dataList[j].tit%></a></li>
+                <%}else{%>
+                <li><span style='color:#6c6c6c;'><%=list[i].dataList[j].tit%></span></li>
+                <%}%>
+            <% } %>
+            </div>
+    <% } %>
+</div>
+</script>
+<script>
+    $('.nav li:first').addClass('active')
+    $('.nav div i').click(function(){
+        if($(this).hasClass("glyphicon-collapse-down")){
+            $(this).removeClass('glyphicon-collapse-down').addClass('glyphicon-expand');
+            $(this).parent().find('li').hide();
+        }else{
+            $(this).removeClass('glyphicon-expand').addClass('glyphicon-collapse-down');
+            $(this).parent().find('li').show();
+        }
+    });
+    $('.nav li').click(function(){
+        $('.nav li').removeClass('active')
+        $(this).addClass('active');
+    });
+</script>

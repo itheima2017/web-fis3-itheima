@@ -1,0 +1,58 @@
+ {
+     "productlist": [{
+             "img"  :"../../../assets/img/product01.jpg",
+             "mtitle": "香港3晚4日自由行",
+             "stitle":"香港航空，早去晚回，入住华丽海景酒店，临近地铁站，仅限个签",
+             "fromcity": "上海",
+             "price": 4399,
+             "type":"自由行",
+             "intro":"北欧风光旖旎",
+             "good":"100.0%",
+             "comment":25
+         },
+         {
+              "img"  :"../../../assets/img/product02.jpg",
+             "mtitle": "俄罗斯+北欧四国+峡湾12-14日游",
+             "stitle":"克宫+冬宫+夏宫花园+斯德哥尔摩市政厅...",
+             "fromcity": "南京",
+             "price": 1400,
+             "type":"跟团游",
+             "intro":"小桥流水人家",
+             "good":"98.0%",
+             "comment":36
+         },
+         {
+              "img"  :"../../../assets/img/product03.jpg",
+             "mtitle": "【五一】香港4晚5天休闲自助游",
+             "stitle":"国际优质航空港龙航司往返，搭配4晚荃湾如心酒店",
+             "fromcity": "北京",
+             "price": 3700,
+             "type":"跟团游",
+             "intro":"北欧风光旖旎",
+             "good":"100.0%",
+             "comment":55
+         },
+         {
+             "img"  :"../../../assets/img/product04.jpg",
+             "mtitle": "香港3晚4日自由行",
+             "stitle":"香港航空，早去晚回，入住华丽海景酒店，临近地铁站，仅限个签",
+             "fromcity": "北京",
+             "price": 2019,
+             "type":"跟团游",
+             "intro":"小桥流水人家",
+             "good":"90.0%",
+             "comment":45
+         },
+         {
+              "img"  :"../../../assets/img/product05.jpg",
+             "mtitle": "香港3晚4日自由行",
+             "stitle":"香港航空，早去晚回，入住华丽海景酒店，临近地铁站，仅限个签",
+             "fromcity": "北京",
+             "price": 2089,
+             "type":"自由行",
+             "intro":"北欧风光旖旎",
+             "good":"100.0%",
+             "comment":25
+         }
+     ]
+ }

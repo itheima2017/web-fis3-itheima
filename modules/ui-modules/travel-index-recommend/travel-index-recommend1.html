@@ -1,0 +1,25 @@
+<!--推荐区一-->
+<script type="text/ejs" data-json="./travel-product.json">
+
+<div class="recommend1">
+    <h4 class="title-nobg"><span>爱游推荐</span></h4>
+    <div class="prolist">
+        <ul>
+             <% for(var i=0;i<productlist.length;i++){ %>
+
+            <li class="proline">
+                <a href="travel-info.html" target="_blank">
+                    <div class="proline-img"><img src="<%=productlist[i].img%>" class="img-responsive" /></div>
+                    <div class="proline-text">
+                        <div class="destination">【爱游推荐】<%=productlist[i].title%></div>
+                        <div class="price"><i>￥<%=productlist[i].price%></i>起<em><%=productlist[i].fromcity%>出发</em></div>
+                    </div>
+                </a>
+            </li>
+
+            <% } %>
+        </ul>
+    </div>
+</div>
+
+</script>

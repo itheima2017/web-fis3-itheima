@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../assets/img/favicon.ico">
+
+  <title>爱游网-首页</title>
+
+</head>
+
+<body>
+  <div class="wrapper">
+        <div class="wrapper-content">
+
+
+      <!-- 页面头部 -->
+      <link rel="import" href="../../modules/ui-modules/top-header/top-header.html?__inline">
+      <link rel="import" href="../../modules/ui-modules/header/header.html?__inline">
+      <div class="travel-index">
+        <div class="container">
+          <div class="maincontent">
+            <!-- 搜索区域 -->
+            <link rel="import" href="../../modules/ui-modules/travel-list-city-btn/travel-list-city-btn.html?__inline">
+            <link rel="import" href="../../modules/ui-modules/travel-list-search-bar/travel-list-search-bar.html?__inline">
+
+            <div class="clearfix"></div>
+            <!-- 调用内容组件 -->
+            <div class="navintro">
+              <link rel="import" href="../../modules/ui-modules/travel-index-nav/travel-index-nav.html?__inline">
+              <link rel="import" href="../../modules/ui-modules/travel-index-imgroll/travel-index-imgroll.html?__inline">
+            </div>
+            <div class="recommend">
+              <link rel="import" href="../../modules/ui-modules/travel-index-recommend/travel-index-recommend1.html?__inline">
+              <link rel="import" href="../../modules/ui-modules/travel-index-recommend/travel-index-recommend2.html?__inline">
+              <link rel="import" href="../../modules/ui-modules/travel-index-recommend/travel-index-recommend3.html?__inline">
+            </div>
+            <div style="clear: both"></div>
+          </div>
+        </div>
+      </div>
+      <!-- /container -->
+    </div>
+  </div>
+  <!-- 页面底部 -->
+  <link rel="import" href="../../modules/ui-modules/footer/footer.html?__inline">
+  <!--侧边栏-->
+  <link rel="import" href="../../modules/ui-modules/sidebar/sidebar.html?__inline">
+  <!-- 页面 css js -->
+  <script src="./travel-index.js"></script>
+  <link href="./travel-index.scss" rel="stylesheet">
+
+</body>

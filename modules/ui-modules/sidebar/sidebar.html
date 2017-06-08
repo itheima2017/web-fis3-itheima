@@ -1,0 +1,68 @@
+<div class="sidebar">
+    <div class="slider-top">
+        <ul class="list-unstyled sidenavbars">
+            <li>
+                <a href="travel-personal-homedata.html" target="_blank">
+                    <span class="icon"><i class="glyphicon glyphicon-user"></i></span>
+                    <div class="hidetext">
+                        <a href="#">我的爱游</a>
+                    </div>
+                </a>
+            </li>
+            <li>
+                 <a href="#" target="_blank">
+                <span class="icon"><i class="glyphicon glyphicon-heart"></i></span>
+                <div class="hidetext">
+                    <a href="#">我的收藏</a>
+                </div>
+                 </a>
+            </li>
+            <li>
+                 <a href="travel-feedback.html" target="_blank">
+                 <span class="icon"><i class="glyphicon glyphicon-edit"></i></span>
+                 <div class="hidetext">
+                    <a href="#">意见反馈</a>
+                </div>
+                 </a>
+            </li>
+        </ul>
+    </div>
+    <div class="slider-bottom">
+        <ul class="list-unstyled">
+            <li class="cd-top"><i class="glyphicon glyphicon-plane gotop"></i></li>
+        </ul>
+    </div>
+</div>
+<script>
+$(function(){
+    $(".sidebar li").hover(
+        function(){
+        $(this).addClass("active");
+        $(this).children(".hidetext").show();
+    },
+        function(){
+        $(this).removeClass("active");
+        $(this).children(".hidetext").hide();
+        })
+})
+
+        var offset = 300,
+        offset_opacity = 1200,
+        scroll_top_duration = 700,
+        $back_to_top = $('.cd-top');
+
+    $(window).scroll(function(){
+        ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+        if( $(this).scrollTop() > offset_opacity ) {
+            $back_to_top.addClass('cd-fade-out');
+        }
+    });
+    $back_to_top.on('click', function(event){
+        event.preventDefault();
+        $('body,html').animate({
+                scrollTop: 0,
+            }, scroll_top_duration
+        );
+    });
+
+</script>

@@ -1,0 +1,42 @@
+<div class="travel-tab-ajax">
+    <!-- collapse nav tabs-->
+    <div class="sidebar-nav" >
+        <h4>我的爱游</h4>
+        <a href="#menu-one" class="nav-header collapsed on" data-toggle="collapse">个人信息<i class="pull-right glyphicon glyphicon-chevron-toggle"></i></a>
+        <ul id="menu-one" class="nav nav-tabs collapse in">
+            <li role="presentation" class="active">
+                <a href="travel-personal-homedata.html" target="_blank">个人资料</a>
+            </li>
+            <li role="presentation">
+                <a href="travel-personal-homecontacts.html" target="_blank">常用联系人</a>
+            </li>
+            <li role="presentation">
+                <a href="travel-personal-homepassword.html" target="_blank">修改密码</a>
+            </li>
+        </ul>
+        <a href="travel-personal-ordermanage.html" target="_blank" class="nav-header" >订单管理</a>
+        <a href="travel-personal-collectmanage.html" target="_blank"  class="nav-header" >收藏管理</a>
+        <a href="#menu-two" class="nav-header" data-toggle="collapse">游记管理<i class="pull-right glyphicon glyphicon-chevron-toggle"></i></a>
+        <ul id="menu-two" class="nav nav-tabs collapse " role="tablist">
+            <li role="presentation">
+                <a href="travel-personal-noterelease.html"  target="_blank">发布游记</a>
+            </li>
+            <li role="presentation">
+                <a href="travel-personal-notemanage.html"  target="_blank">管理游记</a>
+            </li>
+            <li role="presentation">
+                <a href="travel-personal-notecollect.html"  target="_blank">游记收藏</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<script>
+    $(function(){
+        $(".nav-header").click (function(){
+            $(this).addClass("on");
+            $(this).siblings(".on").removeClass("on"); 
+            $(this).siblings(".in").removeClass("in"); 
+        });
+    })
+</script>

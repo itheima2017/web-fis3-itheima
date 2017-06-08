@@ -1,0 +1,23 @@
+{
+  "name": "web-pc-fis3",
+  "version": "1.0.0",
+  "description": "web PC端",
+  "main": "index.js",
+  "scripts": {
+    "start": "fis3 server start && node fis-plus && fis3 release -wL",
+    "release": "fis3 release && node fis-plus",
+    "dist": "fis3 release -d ./release && gulp",
+    "open": "fis3 server open",
+    "cls": " fis3 release -c"
+  },
+  "author": "研究院研发部",
+  "license": "ISC",
+  "dependencies": {
+    "copy-dir": "^0.3.0",
+    "del": "^2.2.2",
+    "fis-parser-node-sass": "^1.0.1",
+    "fis3-parser-html-ejs": "^1.0.3",
+    "gulp": "^3.9.1",
+    "gulp-html-beautify": "^1.0.1"
+  }
+}
