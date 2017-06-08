@@ -2,7 +2,10 @@
 
 ## 前言
 
-组件化网站开发框架
+组件化网站开发框架, 适合团队开发。
+
+> 如果你只是开发用，请直接下载zip包解压使用。
+> https://github.com/itheima2017/web-fis3-itheima/archive/master.zip
 
 ## 技术栈
 
