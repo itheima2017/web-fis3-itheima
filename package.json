@@ -8,7 +8,7 @@
     "release": "fis3 release && node fis-plus",
     "dist": "fis3 release -d ./release && gulp",
     "open": "fis3 server open",
-    "cls": " fis3 release -c"
+    "clear": " fis3 release -c"
   },
   "author": "研究院研发部",
   "license": "ISC",
